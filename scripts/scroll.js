@@ -8,7 +8,7 @@ $(document).on('scroll', function() {
     let percentScroll = 100 * (pixelsFromTop / ($(document).height() - $(window).height() ));
 
     $('.progress-bar').css('width', percentScroll + '%');
-    $('.progress-counter').text(pixelsFromTop + ' pixels down');
+    $('.progress-counter').text('Pixels down: ' + pixelsFromTop);
 
     if(pixelsFromTop > 50) {
         $('header').addClass('hidden');
