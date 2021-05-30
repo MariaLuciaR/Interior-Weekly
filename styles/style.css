@@ -19,6 +19,7 @@ header {
   width: 100%;
   padding: 40px;
   box-sizing: border-box;
+  transition: all 0.5s ease;
 }
 
 h1 {
@@ -46,4 +47,8 @@ section img {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.hidden {
+  transform: translateY(-100%)
 }

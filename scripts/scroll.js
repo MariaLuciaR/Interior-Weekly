@@ -4,8 +4,13 @@
 
 $(document).on('scroll', function() {
 
-    var pixelFromTop = $(document).scrollTop()
+    var pixelsFromTop = $(document).scrollTop()
 
-    $('.progress').text(pixelsFromTop + ' pixels from top')
-    console.log
+    $('.progress').text(pixelsFromTop + ' pixels down');
+
+    if(pixelsFromTop > 50) {
+        $('header').addClass('hidden');
+    } else {
+        $('header').removeClass('hidden');
+    }
 });
