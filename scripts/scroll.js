@@ -4,9 +4,11 @@
 
 $(document).on('scroll', function() {
 
-    var pixelsFromTop = $(document).scrollTop()
+    let pixelsFromTop = $(document).scrollTop()
+    let percentScroll = 100 * (pixelsFromTop / ($(document).height() - $(window).height() ));
 
-    $('.progress').text(pixelsFromTop + ' pixels down');
+    $('.progress-bar').css('width', percentScroll + '%');
+    $('.progress-counter').text(pixelsFromTop + ' pixels down');
 
     if(pixelsFromTop > 50) {
         $('header').addClass('hidden');
@@ -27,17 +29,3 @@ $(document).on('scroll', function() {
     }
 
 });
-
-/*
-Background color.          #ffffff
-
-Blue Bars color   		   #7fdbff
-
-Brown Background	    #a29c97
-
-Grey Background 	    #d9dfe4
-
-Red Background 		    #fff0f0
-
-Green Background	    #cdccc7
-*/ 

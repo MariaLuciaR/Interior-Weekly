@@ -49,10 +49,20 @@ section img {
   height: 600px;
 }
 
-.progress {
+.progress-bar {
   position: fixed;
   top: 0;
   left: 0;
+  height: 4px;
+  background-color: #7fdbff;
+}
+
+.progress-counter {
+  position: fixed;
+  top: 4px;
+  left: 0;
+  font-size: 14px;
+  opacity: 75%;
 }
 
 .hidden {
