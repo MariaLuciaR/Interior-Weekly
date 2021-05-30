@@ -13,4 +13,31 @@ $(document).on('scroll', function() {
     } else {
         $('header').removeClass('hidden');
     }
+
+    if(pixelsFromTop < 600) {
+        $('body').css('background-color', '#FFF');
+    } else if (pixelsFromTop < 1400) {
+        $('body').css('background-color', '#a29c97');
+    } else if (pixelsFromTop < 2200) {
+        $('body').css('background-color', '#d9dfe4');
+    } else if (pixelsFromTop < 3000) {
+        $('body').css('background-color', '#fff0f0');
+    } else {
+        $('body').css('background-color', '#cdccc7');
+    }
+
 });
+
+/*
+Background color.          #ffffff
+
+Blue Bars color   		   #7fdbff
+
+Brown Background	    #a29c97
+
+Grey Background 	    #d9dfe4
+
+Red Background 		    #fff0f0
+
+Green Background	    #cdccc7
+*/ 
